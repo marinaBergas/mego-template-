@@ -1,0 +1,66 @@
+.our-work {
+    .our-work-wrapper {
+      
+        .our-work-text-wrapper{
+           
+                .our-work-text {
+                    .our-work-text-header {
+    
+                        position: relative;
+                        h1{
+                        
+                            text-transform: uppercase;
+                            &::after {
+                            @extend %h1;
+                            @extend %line;
+                        }}
+                    }
+                }
+            
+               
+        }
+
+        .our-work-items {
+            .our-work-col {
+               
+               
+              figure{ 
+                position: relative;
+                &:hover .over-lay-img {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  
+                }
+               
+                    .over-lay-img {
+                        position: absolute;
+                        left: 0%;
+                        bottom: 0%;
+                        right: 0%;
+                        top: 0%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-image: linear-gradient(0deg, rgba(251, 227, 137, 0.9) 0%, rgba(243, 138, 129, 0.9) 100%);
+                        text-align: center;
+                        box-shadow: $white-blue 10px 10px;
+                         display: none;
+                         .over-lay-content{
+                             i{
+                                font-size: convertsize(40);
+                             }
+                         }
+                    }
+                   
+
+                    
+                }
+
+
+               
+            }
+          
+        }
+    }
+}

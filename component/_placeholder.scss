@@ -1,0 +1,51 @@
+h3 {
+  font-family: 'KaushanScript-Regular';
+  font-size: convertsize(24);
+  font-weight: 400;
+}
+
+a {
+  font-size: convertsize(14);
+  font-family: 'Montserrat-Regular';
+}
+
+h6 {
+  color: $gray-main-color;
+}
+
+p {
+  color: $p-color;
+  font-family: ' Roboto-Regular';
+  font-weight: 400;
+  line-height: 24px;
+  font-size: convertsize(15);
+ 
+}
+
+%h1 {
+  font-size: convertsize(60);
+  font-family: 'Montserrat-Bold';
+  margin: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+%h2 {
+  font-size: convertsize(18);
+  font-family: 'Montserrat-Bold';
+  margin: 0;
+  font-weight: 400;
+}
+
+%line {
+  content: '';
+  border-bottom: 3px solid red;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  margin: 0 auto;
+  width: 80px;
+  opacity: 0.6;
+}

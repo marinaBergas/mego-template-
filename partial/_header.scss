@@ -1,0 +1,123 @@
+#header {
+    background-image: linear-gradient(0deg, rgba(251, 227, 137, 0.8) 0%, rgba(243, 138, 129, 0.8) 100%), url(../assets/Images/homebg.jpg);
+
+
+
+    .container {
+        .navbar-collapse {
+            .navbar-nav {
+                .active {
+                    a {
+                        color: $main;
+                        position: relative;
+
+                        &::after {
+                            content: '';
+                            border-bottom: 3px solid $main;
+                            position: absolute;
+                            top: 0%;
+                            bottom: 0%;
+                            left: 0%;
+                            right: 0%;
+                            margin: 0 auto;
+                            width: 60px;
+                            opacity: 0.6;
+                           
+                        }
+                        @media (max-width: 992px) {
+                            &::after {
+                                border-bottom: 0px solid $main;
+                            }
+ 
+                         }
+                    }
+                }
+            }
+        }
+   
+
+        .carousel {
+            padding-bottom: 100px;
+
+            .carousel-inner {
+                .carousel-item {
+                    h3 {
+                        font-size: convertsize(72);
+                        margin: 229px 0 20px 0;
+
+                        @media (max-width: 992px) {
+                            font-size: convertsize(50);
+
+                        }
+
+                        @media (max-width: 768px) {
+                            font-size: convertsize(30);
+
+                        }
+                    }
+
+                    h1 {
+                        @extend %h1;
+                        text-transform: uppercase;
+
+                        &::after {
+                            @extend %line;
+                            position: absolute;
+                            top: 0%;
+                            bottom: 10%;
+                            @include bordered($white);
+                        }
+
+                        font-size: convertsize(150);
+                        margin-bottom: 50px;
+
+                        @media (max-width: 992px) {
+                            font-size: convertsize(90);
+
+                        }
+
+                        @media (max-width: 768px) {
+                            font-size: convertsize(80);
+
+                        }
+
+
+                    }
+
+
+
+                }
+
+            }
+            .carousel-indicators {
+                .carousel-indecators-p{
+
+                    p{
+                      
+                        @media (max-width: 992px) {
+                            span{
+                                font-size: 16px;
+                            }}
+                           
+                        @media (max-width: 768px) {
+                        span{
+                            font-size: 10px;
+                        }}
+                       
+                    }
+                }
+               
+            }
+
+        }
+    }
+       
+
+}
+
+
+
+
+.nav-active {
+    color: $main;
+}

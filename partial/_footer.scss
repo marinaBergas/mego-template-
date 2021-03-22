@@ -1,0 +1,44 @@
+#footer{
+    .container{
+        .row{
+            .footer__logo{
+                .footer__logo__logo__text{
+                   h6{
+                  
+                    span{
+                        font-size: convertsize(18);
+                        font-weight: 700;
+                        font-family: 'Montserrat-Bold';
+                        text-transform: uppercase;
+                    }
+                   }
+                }
+                .footer__logo__links{
+                    p{
+                        text-transform: uppercase;
+                        font-size: convertsize(15);
+                    }
+                    li{
+                        a{
+                            i{
+                                color:$white-blue;
+                            }
+                        }
+                    }
+
+                    
+                }
+                .footer__logo__form{
+                
+                        button{
+                           background-color: $white-blue;
+                        border-color: $white-blue;
+                        }
+                    
+
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,7 @@
+@mixin bordered($color){
+    @if$color==$white{ 
+     border-bottom: 3px solid $white;
+    }@else{
+     
+    }
+}

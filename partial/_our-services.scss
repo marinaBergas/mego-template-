@@ -1,0 +1,14 @@
+.our-services{
+    .container{
+        .our-services-text{
+            .our-services-text-col {
+                
+                h1::after {
+                    @extend %line;
+                }
+    
+            }
+        }
+    }
+   
+}

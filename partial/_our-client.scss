@@ -1,0 +1,19 @@
+.our-client {
+    .container {
+        .our-client-text{
+            .our-client-text-col{
+                .our-client-text-header{
+                  
+                    position: relative;
+                    h1{
+                        text-transform: uppercase;
+                
+                    &::after {
+                        @extend %line;
+                    }
+                }
+                }
+            }
+        }
+    }
+}

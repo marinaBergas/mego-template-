@@ -1,0 +1,33 @@
+.our-services-amazing{
+    .container{
+        .our-services-amazing-text{
+            .our-services-amazing-text-col {
+               
+            
+                h1{
+                    text-transform: uppercase;
+                &::after {
+                    @extend %line;
+                }}
+    
+            }
+            .our-services-amazing-text-col-paragraph{
+                
+                      
+                        p{
+                            @media (max-width: 768px) {   
+                                &{
+                                    font-size: 12px;
+                                   
+                                }
+                                
+                               }
+                               
+                        
+                    
+                }
+            }
+        }
+    }
+   
+}

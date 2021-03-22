@@ -1,0 +1,24 @@
+.brands {
+    background-color: $gray-white;
+
+    .container {
+        .row {
+            h1 {
+                @extend %h1;
+                font-size: convertsize(72);
+                text-transform: uppercase;
+
+            }
+
+            @media (max-width: 992px) {
+                font-size: convertsize(50);
+
+            }
+
+            @media (max-width: 768px) {
+                font-size: convertsize(35);
+
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.our-blog {
+    .container {
+        .our-blog-text {
+            .our-blog-text-col {
+                .our-blog-text-header {
+                    h1 {
+                        position: relative;
+                        text-transform: uppercase;
+
+                        &::after {
+                            @extend %line;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .our-blog-cards {
+
+            .our-blog-cards-item {
+
+                .figure {
+
+                    position: relative;
+
+
+                    .over-lay-img {
+                        position: absolute;
+                        left: -10px;
+                        bottom: 20px;
+                        width: 60px;
+                        height: 70px;
+                        justify-content: center;
+                        display: flex;
+                        align-items: center;
+                        background-color: $white-blue;
+
+                        .over-lay-content-item {
+                            .over-lay-content {
+                                h1 {
+                                    font-size: convertsize(30);
+                                    font-family: 'Montserrat-Bold';
+
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+
+                .our-blog-cards-item-caption {
+                    h1 {
+                        @extend %h1;
+                        text-transform: uppercase;
+                        font-size: convertsize(14);
+                    }
+
+                    p {
+                        text-transform: uppercase;
+                        line-height: convertsize(24);
+                    }
+
+                    .our-blog-cards-item-caption-icon {
+                        .our-blog-cards-item-caption-icon-see {
+                            i {
+                                color: $white-blue;
+                            }
+                        }
+
+                        .our-blog-cards-item-caption-icon-comment {
+                            i {
+                                color: $white-blue;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+
+
+    }
+}
